@@ -1,0 +1,214 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #282c34;
+  padding: 20px;
+  z-index: 1000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header input {
+  margin-top: 10px;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+header input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.spinner {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.spinner div {
+  width: 40px;
+  height: 40px;
+  border: 4px solid transparent;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.end-message {
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+  margin: 20px 0;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  margin-top: 130px
+}
+
+.card {
+  width: 90%;
+  max-width: 42%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin-top: 12px;
+
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  padding: 2px 5px;
+  font-size: 0.7rem;
+  color: white;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: -18px;
+  margin-left: 12px;
+}
+
+.badge.success {
+  background-color: #77d26a;
+}
+
+.badge.failure {
+  background-color: #dc3545;
+}
+
+.badge.upcoming {
+  background-color: #2be4e4;
+  color: black;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.card-content {
+  margin: 10px 0;
+  display: flex;
+  gap: 5px;
+}
+
+.card-content span {
+  color: #555;
+}
+
+.card-content span:first-child {
+  color: #bbb;
+}
+
+.card-row {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.card-image {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  object-fit: cover;
+}
+
+.card-details {
+  flex: 1;
+}
+
+.card-footer {
+  margin-top: 10px;
+}
+
+.card-footer button {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card-footer button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
