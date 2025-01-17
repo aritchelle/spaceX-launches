@@ -22,16 +22,20 @@ function Card({ launch }) {
       {collapsed && (
         <>
           <div className="card-content">
-            <span>{yearsPassed} years ago</span> |
-            
-              <a href={launch.links.article_link} target="_blank" rel="noopener noreferrer">
-                Article
-              </a>
-              |
+            <span>{yearsPassed} years ago</span> 
+              {launch.links.article_link && (<span> | {" "}
+                <a href={launch.links.article_link} target="_blank" rel="noopener noreferrer">
+                  Article
+                </a>
+                </span>
+              )}
               {launch.links.video_link && 
+              (<span> | {" "} 
               <a href={launch.links.video_link} target="_blank" rel="noopener noreferrer">
                 Video
-              </a>}
+              </a>
+              </span>
+              )}
           </div>
 
           <div className="card-row">
